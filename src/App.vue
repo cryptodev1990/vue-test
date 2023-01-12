@@ -1,34 +1,40 @@
 <template>
-  <Navbar msg="asdfasfd"/>
-  <div class="block1">
+  <div class="d-flex flex-column">
     <div class="back-img">
-    <img src="./assets/t-shirt.png">
-    <img src="./assets/Nois.png" class="nois-img" />
-  </div>  
+      <img src="./assets/t-shirt.png" class="w-100" />
+    </div>
+    <Navbar />
+    <Text />
+    <Ellipse />
+    <Landing />
   </div>
 </template>
 
 <script>
 import Navbar from './components/Navbar.vue'
+import Text from './components/Text.vue'
+import Ellipse from './components/Ellipse.vue'
+import Landing from './components/Landing.vue'
 
 export default {
   name: 'App',
   components: {
-    Navbar
+    Navbar,
+    Text,
+    Ellipse,
+    Landing,
   },
 }
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: 'Poppins'; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: white;
-}
-
-.back-img img{
-  width: 100%;
 }
 </style>
