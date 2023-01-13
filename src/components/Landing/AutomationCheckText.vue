@@ -1,0 +1,40 @@
+<template>
+  <div class="col d-flex flex-column gap-2">
+    <div class="d-flex gap-2 align-items-center text-start">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-check-lg"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"
+        />
+      </svg>
+      <h5 class="automation-works-font">
+        {{ text }}
+      </h5>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'AutomationCheckText',
+  props: {
+    text: String
+  }
+}
+</script>
+
+<style>
+.automation-works-font {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #c3bed7;
+}
+</style>

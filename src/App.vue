@@ -1,8 +1,6 @@
 <template>
   <div class="d-flex flex-column">
-    <div class="back-img">
-      <img src="./assets/t-shirt.png" class="w-100" />
-    </div>
+    <img src="./assets/t-shirt.png" class="w-100" />
     <Navbar />
     <Text />
     <Ellipse />
@@ -37,4 +35,5 @@ export default {
   text-align: center;
   color: white;
 }
+
 </style>
