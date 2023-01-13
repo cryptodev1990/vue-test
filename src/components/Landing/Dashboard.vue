@@ -9,14 +9,14 @@
     <img src="../../assets/chart.svg" alt="Chart" title="chart" />
     <div class="container d-flex gap-5">
       <div class="col d-flex flex-column gap-2">
-        <Brand brandUrl="../../assets/Brand/Amazon.svg" brandName="Amazon" value="8 856" />
-        <Brand brandUrl="../../assets/Brand/RedBubble.svg" brandName="RedBubble" value="7 464" />
-        <Brand brandUrl="../../assets/Brand/TeePublic.svg" brandName="TeePublic" value="5 954" />
+        <Brand brandUrl="Brand/Amazon.svg" brandName="Amazon" value="8 856" />
+        <Brand brandUrl="Brand/RedBubble.svg" brandName="RedBubble" value="7 464" />
+        <Brand brandUrl="Brand/TeePublic.svg" brandName="TeePublic" value="5 954" />
       </div>
       <div class="col d-flex flex-column gap-2">
-        <Brand brandUrl="../../assets/Brand/Printful.svg" brandName="Printful" value="4 008" />
-        <Brand brandUrl="../../assets/Brand/Zazzle.svg" brandName="Zazzle" value="2 436" />
-        <Brand brandUrl="../../assets/Brand/Society6.svg" brandName="Society 6" value="0" />
+        <Brand brandUrl="Brand/Printful.svg" brandName="Printful" value="4 008" />
+        <Brand brandUrl="Brand/Zazzle.svg" brandName="Zazzle" value="2 436" />
+        <Brand brandUrl="Brand/Society6.svg" brandName="Society 6" value="0" />
       </div>          
     </div>
   </div>

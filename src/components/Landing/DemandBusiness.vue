@@ -1,0 +1,70 @@
+<template>
+  <img
+    src="../../assets/DemandBusiness.png"
+    alt="Demand Business"
+    title="Demand Business"
+    class="demand-business"
+  />
+  <div class="d-flex flex-column gap-1 demand-business-text">
+    <div class="d-flex gap-2">
+      <h2 class="revolutionize">Revolutionize</h2>
+      <h2 class="demand-business-gradient">your Print</h2>
+    </div>
+    <h1 class="demand-business-today">on Demand business today</h1>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'DemandBusiness',
+}
+</script>
+
+<style>
+
+.demand-business {
+  position: absolute;
+  top: 3500px;
+  left: 19%;
+  z-index: 2;
+}
+
+.demand-business-text {
+  position: absolute;
+  left: 22%;
+  top: 3300px;
+  z-index: 3;
+}
+
+.revolutionize {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  backdrop-filter: blur(10px);
+}
+
+.demand-business-gradient {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  background: linear-gradient(91.65deg, #f4b913 3.02%, #8df53a 69.31%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  backdrop-filter: blur(10px);
+}
+
+.demand-business-today {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 120%;
+  color: #ffffff;
+  backdrop-filter: blur(10px);
+}
+</style>

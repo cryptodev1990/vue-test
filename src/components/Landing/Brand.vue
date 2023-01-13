@@ -1,11 +1,11 @@
 <template>
-  <div class="col d-flex pr-4 align-items-center gap-4 brand-border pb-2">
-    <img src="../../assets/Brand/Amazon.svg" alt="Brand" title="Brand" class="brand-img" />
-    <div class="d-flex flex-column gap-1">
+  <div class="col d-flex align-items-center gap-4 brand-border pb-1 mx-4">
+    <img :src="brandUrl" alt="Brand" title="Brand" class="brand-img" />
+    <div class="d-flex flex-column">
       <h5 class="brand-name">{{ brandName }}</h5>
-      <div class="d-flex gap-1 align-items-center">
+      <div class="d-flex gap-1">
         <img
-          src="../../assets/Brand/brandValueImage.svg"
+          src="Brand/brandValueImage.svg"
           alt="Value"
           title="Value"
         />
@@ -28,7 +28,7 @@ export default {
 
 <style>
 .brand-border {
-  border-bottom: 0.742455px solid #989fbf;
+  border-bottom: 0.742455px solid #989fbf2a;
 }
 
 .brand-img {
