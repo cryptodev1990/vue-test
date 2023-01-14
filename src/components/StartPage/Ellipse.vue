@@ -21,6 +21,7 @@ body {
   height: 600px;
   margin-left: -25%;
   margin-top: 50px;
+  background: #ffffff;
   z-index: 1;
   border-radius: 100%;
 }
@@ -31,7 +32,7 @@ body {
   width: 60%;
   margin-left: 20%;
   background-repeat: no-repeat, repeat;
-  height: 626px;
+  height: 800px;
   background-image: url("../../assets/movie.png");
 }
 </style>
