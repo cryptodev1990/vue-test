@@ -42,7 +42,7 @@ export default {
 }
 
 .automation {
-  margin-top: 355px;
+  margin-top: 335px;
   margin-left: 5%;
   width: 90%;
 }

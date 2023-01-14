@@ -17,7 +17,7 @@
         selling products.
       </p>
     </div>
-    <div>
+    <div class="px-5">
       <img
         src="../../assets/Merchtitans-small.png"
         alt="Merch Titans"

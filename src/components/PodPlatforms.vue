@@ -72,7 +72,7 @@ export default {
 .pod-platform {
   background-image: url('../assets/PodBackground.png');
   background-repeat: no-repeat;
-  min-height: 1200px;
+  height: 1144px;
   width: 100%;
   padding-top: 100px;
   margin-top: 150px;

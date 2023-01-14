@@ -23,7 +23,7 @@
         on Amazon per keyword, and more.
       </p>
     </div>
-    <div>
+    <div class="px-5">
       <img
         src="../../assets/Dashboard-small.png"
         alt="Dashboard"
