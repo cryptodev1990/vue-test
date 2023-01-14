@@ -26,7 +26,7 @@ export default {
   computed: {
     valueImage() {
       return {
-        backgroundImage: this.backgroundUrl,
+        backgroundImage: `url(${this.backgroundUrl})`,
       }
     },
   },
@@ -36,8 +36,7 @@ export default {
 <style>
 .brand-background {
   background-repeat: no-repeat;
-  height: 350px;
-  width: 350px;
+  height: 380px;
 }
 
 .brand-title {
