@@ -29,10 +29,10 @@ body {
 .movie {
   z-index: 2;
   margin-top: -630px;
-  width: 60%;
+  width: 1111px;
   margin-left: 20%;
   background-repeat: no-repeat, repeat;
-  height: 800px;
+  height: 626px;
   background-image: url("../../assets/movie.png");
 }
 </style>

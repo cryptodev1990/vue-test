@@ -38,7 +38,7 @@ export default {
   height: 3800px;
   background-repeat: no-repeat;
   margin-top: 50px;
-  width: 68%;
+  width: 1292px;
   padding-left: 100px;
   padding-top: 105px;
   padding-right: 80px;

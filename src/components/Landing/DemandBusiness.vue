@@ -20,7 +20,8 @@ export default {
   background-image: url("../../assets/DemandBusiness.png");
   background-repeat: no-repeat;
   margin-top: 350px;
-  height: 500px;
+  height: 465px;
+  width: 1050px;
   margin-left: 6%;
 }
 
