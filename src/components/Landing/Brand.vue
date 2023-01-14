@@ -1,14 +1,10 @@
 <template>
-  <div class="col d-flex align-items-center gap-4 brand-border pb-1 mx-4">
+  <div class="col d-flex align-items-center gap-3 brand-border pb-1 mx-4">
     <img :src="brandUrl" alt="Brand" title="Brand" class="brand-img" />
-    <div class="d-flex flex-column">
+    <div>
       <h5 class="brand-name">{{ brandName }}</h5>
       <div class="d-flex gap-1">
-        <img
-          src="Brand/brandValueImage.svg"
-          alt="Value"
-          title="Value"
-        />
+        <img src="Brand/brandValueImage.svg" alt="Value" title="Value" />
         <h6 class="brand-value">{{ value }}</h6>
       </div>
     </div>
@@ -31,21 +27,16 @@ export default {
   border-bottom: 0.742455px solid #989fbf2a;
 }
 
-.brand-img {
-  width: 40px;
-  height: 40px;
-}
-
 .brand-name {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 11.8793px;
   line-height: 120%;
   color: #989fbf;
 }
 
 .brand-value {
   font-weight: 600;
-  font-size: 15px;
+  font-size: 11.8793px;
   line-height: 21px;
   color: #191d21;
 }

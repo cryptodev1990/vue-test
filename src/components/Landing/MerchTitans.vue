@@ -5,22 +5,24 @@
     title="MerchTitans"
     class="merch-titans"
   />
-  <div class="p-3 statistics d-flex flex-column gap-2 align-items-start">
+  <div class="p-3 statistics d-flex flex-column align-items-start">
     <h3 class="statistics-text">Statistics</h3>
     <div class="container d-flex flex-column gap-3">
       <div class="row gap-3">
-        <StatisticsDetail title="Results" value="36" color="#04CB00" />
+        <StatisticsDetail title="Results" value="36" color="#04CB00" :small=false />
         <StatisticsDetail
           title="Total Results"
           value="10000+"
           color="#B43AFF"
+          :small=false
         />
         <StatisticsDetail
           title="Average BSR"
           value="1,724,675"
           color="#FF3AD4"
+          :small=false
         />
-        <StatisticsDetail title="Top E.M.S" value="73" color="#FF3A52" />
+        <StatisticsDetail title="Top E.M.S" value="73" color="#FF3A52" :small=false />
       </div>
       <div class="row gap-3">
         <div class="col d-flex flex-column align-items-center cell p-3">
@@ -31,16 +33,19 @@
           title="Minimum Price"
           value="$13.07"
           color="#04CBD8"
+          :small=false
         />
         <StatisticsDetail
           title="Maximum Price"
           value="$28.29"
           color="#FF3A52"
+          :small=false
         />
         <StatisticsDetail
           title="Average Price"
           value="$19.02"
           color="#3A6CFF"
+          :small=false
         />
       </div>
     </div>
@@ -59,6 +64,12 @@ export default {
 </script>
 
 <style>
+.merch-titans {
+  margin-top: 40px;
+  width: 80%;
+  margin-left: 10%;
+}
+
 .statistics-text {
   font-style: normal;
   font-weight: 500;
@@ -73,13 +84,6 @@ export default {
   background: rgba(255, 255, 255, 0.5);
   border: 0.972151px solid rgba(188, 197, 234, 0.25);
   border-radius: 15.5544px;
-}
-
-.merch-titans {
-  position: absolute;
-  top: 1750px;
-  left: 24%;
-  z-index: 1;
 }
 
 .statistics-category {
@@ -103,9 +107,9 @@ export default {
 }
 
 .statistics {
-  position: absolute;
-  top: 2020px;
-  left: 23%;
+  margin-top: -500px;
+  margin-left: 3%;
+  width: 60%;
   z-index: 2;
   background: rgba(255, 255, 255, 0.9);
   border: 0.972151px solid rgba(188, 197, 234, 0.25);

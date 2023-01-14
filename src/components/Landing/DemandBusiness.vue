@@ -1,11 +1,5 @@
 <template>
-  <img
-    src="../../assets/DemandBusiness.png"
-    alt="Demand Business"
-    title="Demand Business"
-    class="demand-business"
-  />
-  <div class="d-flex flex-column gap-1 demand-business-text">
+  <div class="d-flex flex-column gap-1 text-start demand-business p-4">
     <div class="d-flex gap-2">
       <h2 class="revolutionize">Revolutionize</h2>
       <h2 class="demand-business-gradient">your Print</h2>
@@ -23,17 +17,11 @@ export default {
 <style>
 
 .demand-business {
-  position: absolute;
-  top: 3510px;
-  left: 20%;
-  z-index: 2;
-}
-
-.demand-business-text {
-  position: absolute;
-  left: 25%;
-  top: 3750px;
-  z-index: 3;
+  background-image: url("../../assets/DemandBusiness.png");
+  background-repeat: no-repeat;
+  margin-top: 350px;
+  height: 500px;
+  margin-left: 6%;
 }
 
 .revolutionize {
@@ -56,7 +44,6 @@ export default {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  backdrop-filter: blur(10px);
 }
 
 .demand-business-today {
@@ -65,6 +52,6 @@ export default {
   font-size: 42px;
   line-height: 120%;
   color: #ffffff;
-  backdrop-filter: blur(10px);
 }
+
 </style>

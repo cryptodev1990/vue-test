@@ -32,8 +32,12 @@ export default {
 <style>
 .landing {
   background-image: url('../assets/landingBackground.png');
+  height: 3800px;
   background-repeat: no-repeat;
   margin-top: 50px;
-  width: 65%;
+  width: 68%;
+  padding-left: 100px;
+  padding-top: 105px;
+  padding-right: 80px;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="container container-text">
+  <div class="container">
     <div class="row">
       <div class="col d-flex flex-column text-start">
         <h1 class="print-on-demand text-gradient">Print on Demand</h1>
@@ -41,13 +41,6 @@ export default {
 </script>
 
 <style>
-.container-text {
-  position: absolute;
-  top: 1710px;
-  left: 21%;
-  z-index: 2;
-  width: 65%;
-}
 
 .h6-content {
   font-style: normal;
@@ -70,10 +63,12 @@ export default {
   font-size: 38px;
   line-height: 120%;
 }
+
 .text-gradient {
   background: linear-gradient(91.65deg, #f4b913 3.02%, #8df53a 69.31%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
 </style>

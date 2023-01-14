@@ -1,10 +1,10 @@
 <template>
-  <div class="d-flex flex-column automation">
+  <div class="d-flex flex-column automation gap-4">
     <div class="d-flex gap-2">
       <h1 class="merchtitans-gradient automation-works">How Merch Titans</h1>
       <h1 class="automation-works">Automation Works</h1>
     </div>
-    <div class="container d-flex flex-column gap-3">
+    <div class="container d-flex flex-column gap-2">
       <div class="row d-flex gap-5">
         <AutomationCheckText text="Install the application on your computer. It’s available for Windows & Mac." />
         <AutomationCheckText text="Click start and watch the automation magic go to work for you." />
@@ -42,10 +42,9 @@ export default {
 }
 
 .automation {
-  position: absolute;
-  top: 2700px;
-  left: 24%;
-  z-index: 2;
+  margin-top: 355px;
+  margin-left: 5%;
+  width: 90%;
 }
 
 .merchtitans-gradient {
