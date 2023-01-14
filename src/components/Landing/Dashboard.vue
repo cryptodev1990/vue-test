@@ -35,14 +35,14 @@ export default {
 <style>
 .dashboard {
   position: absolute;
-  top: 2750px;
+  top: 2780px;
   left: 19%;
   z-index: 1;
 }
 
 .chart {
   position: absolute;
-  top: 2930px;
+  top: 2950px;
   left: 57%;
   z-index: 2;
 }

@@ -1,10 +1,10 @@
 <template>
-	<div class="nav-bar1 py-4 d-flex border-smooth">
+	<div class="nav-bar1 d-flex border-smooth align-items-center">
 		<b-navbar class="d-flex b-navbar">
 			<b-navbar-nav>
-				<b-navbar-brand><img src="../assets/logo.svg" alt="Logo" title="Merch Titans" /></b-navbar-brand>
+				<b-navbar-brand><img src="../../assets/logo.svg" alt="Logo" title="Merch Titans" /></b-navbar-brand>
 			</b-navbar-nav>
-			<b-navbar-nav class="d-flex gap font">
+			<b-navbar-nav class="d-flex gap navbar-font">
 				<b-nav-item> MTA </b-nav-item>
 				<b-nav-item> KDPA </b-nav-item>
 				<b-nav-item> Canvas Titans </b-nav-item>
@@ -13,7 +13,7 @@
 				<b-nav-item> Affiliates </b-nav-item>
 			</b-navbar-nav>
 			<b-navbar-nav>
-				<button type="button" class="btn btn-outline-warning mb-0">Dashboard</button>
+				<button type="button" class="btn btn-outline-warning mb-0 btn-lg px-5">Dashboard</button>
 			</b-navbar-nav>
 		</b-navbar>
 	</div>
@@ -35,9 +35,9 @@ export default {
 }
 
 .b-navbar {
-	position: absolute;
 	width: 65%;
 	left: 20%;
+	height: 150px;
 }
 
 .gap {
@@ -48,7 +48,7 @@ export default {
 	border-bottom: 1px solid gray;
 }
 
-.font {
+.navbar-font {
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 19px;
@@ -57,7 +57,6 @@ export default {
 }
 
 .nav-bar1{
-	position: absolute;
 	top: 0%;
 	left: 0%;
 	width: 100%;

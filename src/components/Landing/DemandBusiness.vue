@@ -24,15 +24,15 @@ export default {
 
 .demand-business {
   position: absolute;
-  top: 3500px;
-  left: 19%;
+  top: 3510px;
+  left: 20%;
   z-index: 2;
 }
 
 .demand-business-text {
   position: absolute;
-  left: 22%;
-  top: 3300px;
+  left: 25%;
+  top: 3750px;
   z-index: 3;
 }
 

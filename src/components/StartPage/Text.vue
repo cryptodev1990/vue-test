@@ -7,11 +7,17 @@
         <span class="text-font-white">to Several</span>
       </h1>
       <h1 class="text-font">Print on Demand</h1>
-      <h5>Marketplaces with Ease and Increase Sales...</h5>
-      <button type="button" class="btn btn-warning btn-lg my-4" aria-pressed="true">
+      <h5 class="h5-font">Marketplaces with Ease and Increase Sales...</h5>
+      <button
+        type="button"
+        class="btn btn-warning my-5 fw-bold btn-size fs-3 py-3 px-5"
+        aria-pressed="true"
+      >
         TRY FREE >
       </button>
-      <h5 class="font-italic text-secondary">Without Having To Hire or Rely on A Team!</h5>
+      <h5 class="start-text-gray">
+        Without Having To Hire or Rely on A Team!
+      </h5>
     </div>
   </div>
 </template>
@@ -23,24 +29,37 @@ export default {
 </script>
 
 <style>
+.start-text-gray {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 120%;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.text-component {
+  padding-left: 20%;
+}
 
 .text-font {
   font-weight: 800;
   font-size: 62px;
-  line-height: 130%;
+  line-height: 140%;
   letter-spacing: 0.04em;
+}
+
+.h5-font {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  backdrop-filter: blur(10px);
 }
 
 .text-width {
   width: 70%;
-}
-
-.text-component {
-  position: absolute;
-  top: 120px;
-  left: 20%;
-  z-index: 1;
-  width: 100%;
 }
 
 .text-font-white {

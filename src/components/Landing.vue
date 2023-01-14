@@ -1,39 +1,39 @@
 <template>
-  <div class="d-flex justify-content-center landing">
-    <img src="../assets/landingBackground.png" alt="Landing" title="Landing" />
+  <div class="d-flex flex-column landing">
+    <PrintonDemand />
+    <MerchTitans />
+    <AutomationWorks />
+    <DashBoard />
+    <DemandBusiness />
+    <ProductBrandSearch />
   </div>
-  <PrintonDemand />
-  <MerchTitans />
-  <AutomationWorks />
-  <DashBoard />
 </template>
 
 <script>
-import PrintonDemand from "./Landing/PrintonDemand.vue";
-import MerchTitans from "./Landing/MerchTitans.vue"
-import AutomationWorks from "./Landing/AutomationWorks.vue";
-import DashBoard from "./Landing/Dashboard.vue";
+import PrintonDemand from './Landing/PrintonDemand.vue'
+import MerchTitans from './Landing/MerchTitans.vue'
+import AutomationWorks from './Landing/AutomationWorks.vue'
+import DashBoard from './Landing/Dashboard.vue'
+import DemandBusiness from './Landing/DemandBusiness.vue'
+import ProductBrandSearch from './Landing/ProductBrandSearch.vue'
 export default {
   name: 'LandingComponent',
   components: {
     PrintonDemand,
     MerchTitans,
     AutomationWorks,
-    DashBoard
-  }
+    DashBoard,
+    DemandBusiness,
+    ProductBrandSearch,
+  },
 }
 </script>
 
 <style>
-
 .landing {
-  position: relative;
-  top: 100px;
-  z-index: 1;
+  background-image: url('../assets/landingBackground.png');
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  width: 65%;
 }
-
-.landing-width {
-  width: 60%;
-}
-
 </style>
