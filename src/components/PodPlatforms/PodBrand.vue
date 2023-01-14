@@ -1,0 +1,57 @@
+<template>
+  <div
+    class="col d-flex flex-column align-items-start text-start py-4 px-3 gap-2 brand-background"
+    :style="valueImage"
+  >
+    <img :src="brandImageUrl" alt="BrandImage" title="Brand" />
+    <h3 class="brand-title">{{ brandTitle }}</h3>
+    <h6 class="brand-explaination">{{ brandExplaination }}</h6>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'PodBrand',
+  props: {
+    backgroundUrl: String,
+    brandImageUrl: String,
+    brandTitle: String,
+    brandExplaination: String,
+  },
+  // data() {
+  //   return {
+  //     backgroundImage: this.backgroundUrl
+  //   }
+  // },
+  computed: {
+    valueImage() {
+      return {
+        backgroundImage: this.backgroundUrl,
+      }
+    },
+  },
+}
+</script>
+
+<style>
+.brand-background {
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 350px;
+}
+
+.brand-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  white-space: nowrap;
+}
+.brand-explaination {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #c3bed7;
+}
+</style>

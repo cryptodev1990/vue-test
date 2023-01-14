@@ -54,7 +54,6 @@ export default {
   font-size: 24px;
   line-height: 130%;
   letter-spacing: 0.02em;
-  color: #ffffff;
   backdrop-filter: blur(10px);
 }
 

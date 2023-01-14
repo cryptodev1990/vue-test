@@ -156,7 +156,6 @@ export default {
   font-size: 38px;
   line-height: 120%;
   letter-spacing: 0.02em;
-  color: #ffffff;
   backdrop-filter: blur(10px);
 }
 

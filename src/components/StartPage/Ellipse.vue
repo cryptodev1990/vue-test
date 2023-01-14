@@ -21,7 +21,6 @@ body {
   height: 600px;
   margin-left: -25%;
   margin-top: 50px;
-  background: #ffffff;
   z-index: 1;
   border-radius: 100%;
 }

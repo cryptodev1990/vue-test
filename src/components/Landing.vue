@@ -6,6 +6,7 @@
     <DashBoard />
     <DemandBusiness />
     <ProductBrandSearch />
+    <KeywordResearch />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import AutomationWorks from './Landing/AutomationWorks.vue'
 import DashBoard from './Landing/Dashboard.vue'
 import DemandBusiness from './Landing/DemandBusiness.vue'
 import ProductBrandSearch from './Landing/ProductBrandSearch.vue'
+import KeywordResearch from './Landing/KeywordResearch.vue'
 export default {
   name: 'LandingComponent',
   components: {
@@ -25,6 +27,7 @@ export default {
     DashBoard,
     DemandBusiness,
     ProductBrandSearch,
+    KeywordResearch
   },
 }
 </script>
