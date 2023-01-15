@@ -3,6 +3,7 @@
     <StartPage />
     <Landing />
     <PodPlatforms />
+    <PricingComponent />
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import StartPage from "./components/StartPage.vue";
 import Landing from './components/Landing.vue';
 import PodPlatforms from "./components/PodPlatforms.vue";
+import PricingComponent from "./components/Pricing.vue";
 
 export default {
   name: 'App',
   components: {
     StartPage,
     Landing,
-    PodPlatforms
+    PodPlatforms,
+    PricingComponent,
   },
 }
 </script>

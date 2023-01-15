@@ -27,8 +27,6 @@ export default {
         color: this.color,
       }
     }
-  },
-  created() {
   }
 }
 </script>
