@@ -1,37 +1,71 @@
 <template>
   <div class="d-flex pricing-background justify-content-center">
     <div class="d-flex flex-column gap-5 pricing-width">
-      <div class="d-flex justify-content-between">
+      <div class="d-flex justify-content-between align-items-center mb-5">
         <h2 class="pricing-h1">Pricing</h2>
-        <div class="d-flex period-select gap-2 align-items-center">
+        <div
+          class="d-flex period-select align-items-center gap-3 px-3 py-1 rounded-pill"
+        >
           <h5 :class="classMonthly" @click="handleMonthlyClick">Monthly</h5>
           <h5 :class="classAnnual" @click="handleAnnualClick">Annual</h5>
         </div>
+      </div>
+      <div class="d-flex gap-4 justify-content-center">
+        <PriceLabel
+          title="Single Platform Access"
+          price="24"
+          service=""
+          :content="singleContent"
+        />
+        <PriceLabel
+          title="All Access Pass"
+          price="69"
+          service=""
+          :content="allAccessContent"
+        />
+        <PriceLabel
+          title="Lifetime Pass"
+          price="1999"
+          service="one time payment"
+          :content="lifeTimeContent"
+        />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-let click = true;
+import PriceLabel from './Pricing/PriceLabel.vue'
+
+import {
+  singlePlatformAccess,
+  allAccessPass,
+  lifeTimePass,
+} from './Pricing/Service'
+
 export default {
   name: 'PricingComponent',
+  components: {
+    PriceLabel,
+  },
   data() {
     return {
-      click: click,
-      classMonthly : click ? "clicked-text" : "unclicked-text",
-      classAnnual : click ? "unclicked-text" : "clicked-text",
+      singleContent: singlePlatformAccess,
+      allAccessContent: allAccessPass,
+      lifeTimeContent: lifeTimePass,
+      classMonthly: 'clicked-text rounded-pill',
+      classAnnual: 'unclicked-text',
     }
   },
   methods: {
-    handleMonthlyClick () {
-      console.log(click)
-      click = true
+    async handleMonthlyClick() {
+      this.classMonthly = 'clicked-text rounded-pill'
+      this.classAnnual = 'unclicked-text'
     },
-    handleAnnualClick () {
-      console.log(click)
-      click = false
-    }
+    async handleAnnualClick() {
+      this.classMonthly = 'unclicked-text'
+      this.classAnnual = 'clicked-text rounded-pill'
+    },
   },
 }
 </script>
@@ -50,29 +84,31 @@ export default {
 }
 
 .clicked-text {
+  display: flex;
+  justify-content: center;
+  color: #111827;
+  align-items: center;
   padding: 10px 15px;
   background: #ffb507;
   box-shadow: 0px 7px 46px rgba(255, 181, 7, 0.2);
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-  color: #111827;
 }
 
 .unclicked-text {
-  font-style: normal;
+  justify-content: center;
+  align-items: center;
+  color: #111827;
+  padding: 10px 15px;
   font-weight: 500;
   font-size: 16px;
   line-height: 100%;
-  color: #111827;
 }
 
 .period-select {
   background: rgba(255, 181, 7, 0.05);
   border: 1px solid rgba(255, 181, 7, 0.2);
-  border-radius: 50%;
-  padding: 8px;
 }
 
 .pricing-h1 {
