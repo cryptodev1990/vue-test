@@ -6,7 +6,7 @@
     <Pricing />
     <Testimonials />
     <HelpDesk />
-    
+    <Footer></Footer>>
   </div>
 </template>
 
@@ -17,7 +17,7 @@ import PodPlatforms from "./components/PodPlatforms.vue";
 import Pricing from "./components/Pricing.vue";
 import Testimonials from "./components/Testimonials.vue";
 import HelpDesk from "./components/HelpDesk.vue";
-// import Footer from "./components/Footer.vue"
+import Footer from "./components/Footer.vue"
 // 
 export default {
   name: 'App',
@@ -28,7 +28,7 @@ export default {
     Pricing,
     Testimonials,
     HelpDesk,
-    // Footer
+    Footer
   },
 }
 </script>

@@ -13,7 +13,10 @@
       <div class="d-flex flex-column w-50">
         <div v-for="(qa, index) in questionAndAnswer" :key="index">
           <div class="d-flex flex-column py-4">
-            <div class="d-flex justify-content-between align-items-center" @click="handleClick">
+            <div
+              class="d-flex justify-content-between align-items-center"
+              @click="handleClick"
+            >
               <h3 class="question-text text-start">{{ qa.question }}</h3>
               <img
                 src="../assets/addicon.png"
@@ -39,17 +42,17 @@ export default {
     return {
       questionAndAnswer: questionAnswer,
       clicked: false,
-      questionClass: "",
-      answerClass: "hidden"
+      questionClass: '',
+      answerClass: 'hidden',
     }
   },
   methods: {
-    async handleClick () {
+    async handleClick() {
       this.clicked = !this.clicked
-      this.answerClass = this.clicked ? "answer-text text-start" : "hidden"
-      this.questionClass = this.clicked ? "rotate" : ""
-    }
-  }
+      this.answerClass = this.clicked ? 'answer-text text-start' : 'hidden'
+      this.questionClass = this.clicked ? 'rotate' : ''
+    },
+  },
 }
 </script>
 

@@ -21,9 +21,8 @@ export default {
 </script>
 
 <style>
-
 .startpage {
-  background-image: url("../assets/t-shirt.png");
+  background-image: url('../assets/t-shirt.png');
   background-repeat: no-repeat;
   margin-bottom: 200px;
   width: 100%;

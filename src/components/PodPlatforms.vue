@@ -63,7 +63,6 @@ export default {
 </script>
 
 <style>
-
 .container-width {
   display: flex;
   width: 60%;

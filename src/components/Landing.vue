@@ -27,7 +27,7 @@ export default {
     DashBoard,
     DemandBusiness,
     ProductBrandSearch,
-    KeywordResearch
+    KeywordResearch,
   },
 }
 </script>

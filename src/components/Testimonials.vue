@@ -1,5 +1,7 @@
 <template>
-  <div class="d-flex flex-column testimonials-background justify-content-between">
+  <div
+    class="d-flex flex-column testimonials-background justify-content-between"
+  >
     <div class="rectangle-gradient-top"></div>
     <div class="d-flex justify-content-start gap-1">
       <h1 class="testimonials-text">Testimonials</h1>
