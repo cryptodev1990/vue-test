@@ -26,7 +26,7 @@
         </button>
       </div>
     </div>
-    <div class="container p-4 footer-middle">
+    <div class="container p-4 footer-middle pb-5">
       <div class="row">
         <LinkGroup
           class="col-5 first-group"
@@ -37,7 +37,7 @@
         <LinkGroup class="col-7 pl-5" title="Legal" :content="data2" cols="3" />
       </div>
     </div>
-    <div class="container d-flex justify-content-between p-3">
+    <div class="container d-flex justify-content-between p-3 mt-2">
       <div class="row">
         <img
           class="col-3 d-inline"
@@ -114,6 +114,7 @@ export default {
 .footer {
   background: #13111d;
   width: 100%;
+	padding-bottom: 100px;
 }
 .first-group {
   border-right: #6d7280 solid 0.05rem;
