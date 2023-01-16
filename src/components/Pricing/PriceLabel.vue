@@ -104,6 +104,8 @@ export default {
 
 .zoom {
   transition: transform 0.2s;
+  filter: brightness(95%)
+  
 }
 
 .zoom:hover {
@@ -111,5 +113,6 @@ export default {
   -webkit-transform: scale(1.2); /* Safari 3-8 */
   transform: scale(1.2);
   border-radius: 20px;
+  filter: brightness(100%);
 }
 </style>
