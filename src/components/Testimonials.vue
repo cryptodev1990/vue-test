@@ -3,8 +3,21 @@
     class="d-flex flex-column testimonials-background justify-content-between"
   >
     <div class="rectangle-gradient-top"></div>
-    <div class="d-flex justify-content-start gap-1">
-      <h1 class="testimonials-text">Testimonials</h1>
+    <div class="d-flex justify-content-center">
+      <div class="row testimonials-main-content">
+        <div class="col-3">
+        <div class="testimonials-text">Testimonials</div>
+        </div>
+        <div class="col-3 testimonials-main-content-column">
+          <Card :key="item" v-for="item in data1" img="../../assets/Rectangle69.png" :title="item.title" :content="item.content" :author="item.author"></Card>
+        </div>
+        <div class="col-3 testimonials-main-content-column">
+          <Card :key="item" v-for="item in data2" :img="item.img" :title="item.title" :content="item.content" :author="item.author"></Card>
+        </div>
+        <div class="col-3 testimonials-main-content-column">
+          <Card :key="item" v-for="item in data3" :img="item.img" :title="item.title" :content="item.content" :author="item.author"></Card>
+        </div>
+      </div>
     </div>
     <Carousel :wrap-around="true" :breakpoints="breakpoints" :autoplay="2000">
       <Slide v-for="slide in slides" :key="slide.id">
@@ -21,45 +34,8 @@
 </template>
 
 <script>
-import 'vue3-carousel/dist/carousel.css'
-import { Carousel, Slide, Navigation } from 'vue3-carousel'
-
-const breakpoints = {
-  700: {
-    itemsToShow: 3,
-    snapAlign: 'center',
-  },
-  1024: {
-    itemsToShow: 3,
-    snapAlign: 'center',
-  }
-}
-
-const slides = [
-  { id: '1', title: 'Vue 3 Introduction', content: 'VueJS is a library' },
-  { id: '2', title: 'Vue 3 Components', content: 'Know the components' },
-  { id: '3', title: 'Vue 3 Conditional', content: 'Rendering Conditionally' },
-  { id: '4', title: 'Vue 3 Reactivity', content: 'VueJS is Reactive' },
-  {
-    id: '5',
-    title: 'Vue 3 Compute',
-    content: 'VueJS uses computed properties',
-  },
-]
-
 export default {
   name: 'TestimonialsComponent',
-  components: {
-    Carousel,
-    Slide,
-    Navigation,
-  },
-  data() {
-    return {
-      slides: slides,
-      breakpoints: breakpoints
-    }
-  },
 }
 </script>
 
@@ -72,6 +48,7 @@ export default {
 }
 
 .testimonials-text {
+  margin: 0px;
   font-weight: 800;
   font-size: 187.859px;
   line-height: 120%;
@@ -81,7 +58,8 @@ export default {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  transform: rotate(-90deg);
+  writing-mode: vertical-rl;
+  transform: rotate(-180deg);
 }
 
 .rectangle-gradient-top {
@@ -100,28 +78,9 @@ export default {
 }
 
 .testimonials-main-content {
-  padding-left: 215px;
+  padding-left: 20%;
+  padding-right: 20%;
   z-index: 1;
-}
 
-.carousel__item {
-  min-height: 200px;
-  width: 100%;
-  background-color: var(--vc-clr-primary);
-  color: var(--vc-clr-white);
-  font-size: 20px;
-  border-radius: 8px;
-  justify-content: center;
-  align-items: center;
-}
-
-.carousel__slide {
-  padding: 10px;
-}
-
-.carousel__prev,
-.carousel__next {
-  box-sizing: content-box;
-  border: 5px solid white;
 }
 </style>
