@@ -14,6 +14,7 @@
         <div v-for="(qa, index) in questionAndAnswer" :key="index">
           <div :class="(index == 4) ? 'd-flex flex-column py-4 gap-4' : 'd-flex flex-column py-4 gap-4 qa-border'">
             <div
+              role="button"
               class="d-flex justify-content-between align-items-center"
               @click="handleClick(index)"
             >
@@ -22,10 +23,11 @@
                 src="../assets/addicon.png"
                 alt="Add"
                 title="Add"
-                :class="(clicked == index) ? 'rotate' : ''"
+                :class="(clicked == index) ? closeImageClass : ''"
+                @click="handleClose(index)"
               />
             </div>
-            <h5 v-if="index == clicked" class="answer-text show text-start">{{ qa.answer }}</h5>
+            <h5 v-if="index == clicked" :class="answerClass">{{ qa.answer }}</h5>
           </div>
         </div>
       </div>
@@ -42,13 +44,19 @@ export default {
     return {
       questionAndAnswer: questionAnswer,
       clicked: -1,
-      borderClass: "d-flex flex-column py-4 gap-4 qa-border"
+      borderClass: "d-flex flex-column py-4 gap-4 qa-border",
+      answerClass: "answer-text show text-start",
+      closeImageClass: "rotate"
     }
   },
   methods: {
     async handleClick(index) {
       this.clicked = index
     },
+    async handleClose(index) {
+      this.answerClass = (this.clicked == index) ? "collapse" : "answer-text show text-start"
+      this.closeImageClass = (this.clicked == index) ? "rotate-reverse" : "rotate"
+    }
   },
 }
 </script>
@@ -65,6 +73,11 @@ export default {
 .rotate {
   transition: transform 0.5s;
   transform: rotate(45deg);
+}
+
+.rotate-reverse {
+  transition: transform 0.5s;
+  transform: rotate(0deg);
 }
 
 .qa-border {
