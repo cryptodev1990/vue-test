@@ -124,10 +124,6 @@ export default {
   transform: rotate(-180deg);
 }
 
-.testimonials-main-content-column {
-  
-}
-
 .rectangle-gradient-top {
   background: linear-gradient(180deg, rgba(4, 0, 24, 0) 0%, #040018 100%);
   transform: rotate(180deg);
