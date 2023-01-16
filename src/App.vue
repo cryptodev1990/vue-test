@@ -5,6 +5,7 @@
     <PodPlatforms />
     <Pricing />
     <Testimonials />
+    <HelpDesk />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Landing from './components/Landing.vue';
 import PodPlatforms from "./components/PodPlatforms.vue";
 import Pricing from "./components/Pricing.vue";
 import Testimonials from "./components/Testimonials.vue";
+import HelpDesk from "./components/HelpDesk.vue";
 
 export default {
   name: 'App',
@@ -22,7 +24,8 @@ export default {
     Landing,
     PodPlatforms,
     Pricing,
-    Testimonials
+    Testimonials,
+    HelpDesk
   },
 }
 </script>
