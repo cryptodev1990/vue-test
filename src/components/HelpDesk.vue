@@ -1,6 +1,6 @@
 <template>
   <div
-    class="d-flex helpdesk-background justify-content-center align-items-center"
+    class="d-flex helpdesk-background justify-content-center"
   >
     <div class="d-flex justify-content-between gap-5">
       <div class="d-flex flex-column gap-4 text-start">
@@ -12,20 +12,20 @@
       </div>
       <div class="d-flex flex-column w-50">
         <div v-for="(qa, index) in questionAndAnswer" :key="index">
-          <div class="d-flex flex-column py-4">
+          <div :class="(index == 4) ? 'd-flex flex-column py-4 gap-4' : 'd-flex flex-column py-4 gap-4 qa-border'">
             <div
               class="d-flex justify-content-between align-items-center"
-              @click="handleClick"
+              @click="handleClick(index)"
             >
               <h3 class="question-text text-start">{{ qa.question }}</h3>
               <img
                 src="../assets/addicon.png"
                 alt="Add"
                 title="Add"
-                :class="questionClass"
+                :class="(clicked == index) ? 'rotate' : ''"
               />
             </div>
-            <h5 :class="answerClass">{{ qa.answer }}</h5>
+            <h5 v-if="index == clicked" class="answer-text show text-start">{{ qa.answer }}</h5>
           </div>
         </div>
       </div>
@@ -41,16 +41,13 @@ export default {
   data() {
     return {
       questionAndAnswer: questionAnswer,
-      clicked: false,
-      questionClass: '',
-      answerClass: 'hidden',
+      clicked: -1,
+      borderClass: "d-flex flex-column py-4 gap-4 qa-border"
     }
   },
   methods: {
-    async handleClick() {
-      this.clicked = !this.clicked
-      this.answerClass = this.clicked ? 'answer-text text-start' : 'hidden'
-      this.questionClass = this.clicked ? 'rotate' : ''
+    async handleClick(index) {
+      this.clicked = index
     },
   },
 }
@@ -70,12 +67,46 @@ export default {
   transform: rotate(45deg);
 }
 
+.qa-border {
+  border-bottom: 1px solid rgba(126, 117, 165, 0.25);
+  margin-bottom: 20px;
+}
+
 .answer-text {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
   color: #6d7280;
+}
+
+.show {
+  -webkit-animation: display 0.5s linear forwards;
+  animation: display 0.5s linear forwards;
+}
+
+@-webkit-keyframes display {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes display {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .helpdesk-background {
