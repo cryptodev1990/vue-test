@@ -5,6 +5,7 @@
     <PodPlatforms />
     <Pricing />
     <Testimonials />
+    <Footer />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Landing from './components/Landing.vue';
 import PodPlatforms from "./components/PodPlatforms.vue";
 import Pricing from "./components/Pricing.vue";
 import Testimonials from "./components/Testimonials.vue";
+import Footer from "./components/Footer.vue"
 
 export default {
   name: 'App',
@@ -22,7 +24,8 @@ export default {
     Landing,
     PodPlatforms,
     Pricing,
-    Testimonials
+    Testimonials,
+    Footer
   },
 }
 </script>
@@ -33,7 +36,6 @@ export default {
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: white;
 }
 
