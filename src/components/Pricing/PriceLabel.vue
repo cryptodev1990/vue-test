@@ -8,7 +8,7 @@
       <h4 class="price-float">99</h4>
     </div>
     <h4 :class="serviceClass">{{ service }}</h4>
-    <h3 class="title-text pb-4">{{ title }}</h3>
+    <h3 class="title-text pb-4 text-center">{{ title }}</h3>
     <div class="d-flex flex-column">
       <div v-for="(item, index) in content" :key="index">
         <div class="d-flex gap-2 align-items-center mt-2">
@@ -36,7 +36,7 @@ export default {
   },
   data() {
     return {
-      serviceClass: this.service == '' ? 'mb-5' : 'mb-3 service-text',
+      serviceClass: this.service == '' ? 'mb-5' : 'mb-3 service-text text-center',
     }
   },
 }

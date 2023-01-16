@@ -6,8 +6,8 @@
         <div
           class="d-flex period-select align-items-center gap-3 px-3 py-1 rounded-pill"
         >
-          <h5 :class="classMonthly" @click="handleMonthlyClick">Monthly</h5>
-          <h5 :class="classAnnual" @click="handleAnnualClick">Annual</h5>
+          <h5 :class="classMonthly" @click="handleMonthlyClick" role="button">Monthly</h5>
+          <h5 :class="classAnnual" @click="handleAnnualClick" role="button">Annual</h5>
         </div>
       </div>
       <div class="d-flex gap-4 justify-content-center">

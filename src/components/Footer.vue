@@ -114,7 +114,7 @@ export default {
 .footer {
   background: #13111d;
   width: 100%;
-	padding-bottom: 100px;
+  padding-bottom: 100px;
 }
 .first-group {
   border-right: #6d7280 solid 0.05rem;
