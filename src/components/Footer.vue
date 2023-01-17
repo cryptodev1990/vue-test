@@ -59,25 +59,29 @@
           role="button"
           src="../assets/Facebook.png"
           alt="Logo"
-          title="Merch Titans"
+          title="Merch Titans Facebook"
+          class="zoom"
         />
         <img
           role="button"
           src="../assets/Instagram.png"
           alt="Logo"
-          title="Merch Titans"
+          title="Merch Titans Instagram"
+          class="zoom"
         />
         <img
           role="button"
           src="../assets/Twitter.png"
           alt="Logo"
-          title="Merch Titans"
+          title="Merch Titans Twitter"
+          class="zoom"
         />
         <img
           role="button"
           src="../assets/YouTube.png"
           alt="Logo"
-          title="Merch Titans"
+          title="Merch Titans Youtube"
+          class="zoom"
         />
       </div>
     </div>
