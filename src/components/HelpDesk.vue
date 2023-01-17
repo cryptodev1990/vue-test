@@ -80,6 +80,11 @@ export default {
   transform: rotate(0deg);
 }
 
+.show {
+  -webkit-animation: display 0.5s linear forwards;
+  animation: display 0.5s linear forwards;
+}
+
 .qa-border {
   border-bottom: 1px solid rgba(126, 117, 165, 0.25);
   margin-bottom: 20px;
@@ -91,11 +96,6 @@ export default {
   font-size: 16px;
   line-height: 140%;
   color: #6d7280;
-}
-
-.show {
-  -webkit-animation: display 0.5s linear forwards;
-  animation: display 0.5s linear forwards;
 }
 
 @-webkit-keyframes display {

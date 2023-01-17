@@ -8,7 +8,7 @@
         <div class="col-3">
           <div class="testimonials-text">Testimonials</div>
         </div>
-        <div class="col-3 testimonials-main-content-column card-animation-1">
+        <div class="col-3 card-animation-1">
           <Card
             :key="item"
             v-for="item in firstdata"
@@ -18,7 +18,7 @@
             :author="item.author"
           ></Card>
         </div>
-        <div class="col-3 testimonials-main-content-column card-animation-2">
+        <div class="col-3 card-animation-2">
           <Card
             :key="item"
             v-for="item in seconddata"
@@ -28,7 +28,7 @@
             :author="item.author"
           ></Card>
         </div>
-        <div class="col-3 testimonials-main-content-column card-animation-3">
+        <div class="col-3 card-animation-3">
           <Card
             :key="item"
             v-for="item in thirddata"
@@ -125,6 +125,7 @@ export default {
 }
 
 .rectangle-gradient-top {
+  position: absolute;
   background: linear-gradient(180deg, rgba(4, 0, 24, 0) 0%, #040018 100%);
   transform: rotate(180deg);
   width: 100%;
@@ -133,6 +134,8 @@ export default {
 }
 
 .rectangle-gradient-bottom {
+  position: absolute;
+  margin-top: 1101px;
   background: linear-gradient(180deg, rgba(4, 0, 24, 0) 0%, #040018 100%);
   width: 100%;
   height: 214px;

@@ -2,7 +2,7 @@
 	<div class="nav-bar1 d-flex border-smooth align-items-center">
 		<b-navbar class="d-flex b-navbar">
 			<b-navbar-nav>
-				<b-navbar-brand><img src="../../assets/logo.svg" alt="Logo" title="Merch Titans" /></b-navbar-brand>
+				<b-navbar-brand><img src="../../assets/logo.svg" alt="Logo" title="Merch Titans" role="button" /></b-navbar-brand>
 			</b-navbar-nav>
 			<b-navbar-nav class="d-flex gap navbar-font">
 				<b-nav-item> MTA </b-nav-item>

@@ -23,13 +23,8 @@
         on Amazon per keyword, and more.
       </p>
     </div>
-    <div class="px-5">
-      <img
-        src="../../assets/Dashboard-small.png"
-        alt="Dashboard"
-        title="Dashboard"
-      />
-      <div class="d-flex flex-column p-2 gap-2">
+    <div class="d-flex flex-column px-5 justify-content-center">
+      <div class="d-flex flex-column p-3 gap-2 cold-tag-table rounded-2">
         <div class="d-flex gap-1">
           <div class="d-flex cold-tag justify-content-center">
             <img src="../../assets/sun.svg" alt="Colg-Tag" title="Cold-Tag" />
@@ -47,16 +42,40 @@
           </div>
         </div>
         <table>
-
+          <tr class="row pb-1 table-header-font table-element-border mb-2">
+            <th class="col-7 tag-right-border">Tag</th>
+            <th class="col-5">Occurrences</th>
+          </tr>
+          <tr
+            v-for="item in tagitems"
+            :key="item.id"
+            class="row table-element-border tag-name pb-1 mb-2"
+          >
+            <th class="col-7 tag-right-border">{{ item.tag }}</th>
+            <th class="col-5">{{ item.occurrences }} times</th>
+          </tr>
         </table>
       </div>
+      <img
+        src="../../assets/Dashboard-small.png"
+        alt="Dashboard"
+        title="Dashboard"
+        class="dashboard-small"
+      />
     </div>
   </div>
 </template>
 
 <script>
+import { Coldtag } from '../Landing/ColdTagData'
+
 export default {
   name: 'KeywordResearch',
+  data() {
+    return {
+      tagitems: Coldtag,
+    }
+  },
 }
 </script>
 
@@ -71,6 +90,62 @@ export default {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   backdrop-filter: blur(10px);
+}
+
+.tag-name {
+  font-weight: 400;
+  font-size: 9.39779px;
+  line-height: 14px;
+  letter-spacing: -0.03em;
+  color: #111215;
+}
+
+.table-header-font {
+  font-weight: 700;
+  font-size: 8.35359px;
+  line-height: 13px;
+  color: #989fbf;
+}
+
+.tag-right-border {
+  border-right: 0.522099px solid #bec3d4;
+}
+
+.cold-tag-table {
+  position: absolute;
+  top: 4900px;
+  width: 189px;
+  height: 400px;
+  background: #ffffff;
+  left: 70%;
+  z-index: 3;
+  overflow: scroll;
+  float: left;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffffff; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff; 
+}
+
+.table-element-border {
+  border-bottom: 0.522099px solid #bec3d4;
 }
 
 .keyword-research {

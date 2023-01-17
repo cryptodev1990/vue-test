@@ -1,7 +1,7 @@
 <template>
   <div class="ellipse"></div>
   <div class="movie d-flex align-items-center justify-content-center">
-    <img src="../../assets/play.png" alt="Play" title="Play" />
+    <img src="../../assets/play.png" alt="Play" title="Play" role="button" />
   </div>
 </template>
 

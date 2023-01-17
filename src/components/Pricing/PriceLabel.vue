@@ -114,5 +114,6 @@ export default {
   transform: scale(1.2);
   border-radius: 20px;
   filter: brightness(100%);
+  z-index: 2;
 }
 </style>
