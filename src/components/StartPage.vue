@@ -3,6 +3,7 @@
     <Navbar />
     <Text />
     <Ellipse />
+    <img src="../assets/t-shirt.png" alt="StartPage" class="startbackground" title="Start Page" />
   </div>
 </template>
 
@@ -22,9 +23,14 @@ export default {
 
 <style>
 .startpage {
-  background-image: url('../assets/t-shirt.png');
   background-repeat: no-repeat;
   margin-bottom: 200px;
   width: 100%;
+}
+
+.startbackground {
+  width: 100%;
+  position: absolute;
+  z-index: 0;
 }
 </style>

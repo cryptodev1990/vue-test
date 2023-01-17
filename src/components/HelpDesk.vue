@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="d-flex helpdesk-background justify-content-center"
-  >
+  <div class="d-flex helpdesk-background justify-content-center">
     <div class="d-flex justify-content-between gap-5">
       <div class="d-flex flex-column gap-4 text-start">
         <h4 class="faq-title">FREQUENTLY ASKED QUESTIONS</h4>
@@ -12,22 +10,31 @@
       </div>
       <div class="d-flex flex-column w-50">
         <div v-for="(qa, index) in questionAndAnswer" :key="index">
-          <div :class="(index == 4) ? 'd-flex flex-column py-4 gap-4' : 'd-flex flex-column py-4 gap-4 qa-border'">
+          <div
+            :class="
+              index == 4
+                ? 'd-flex flex-column py-4 gap-4'
+                : 'd-flex flex-column py-4 gap-4 qa-border'
+            "
+          >
             <div
               role="button"
               class="d-flex justify-content-between align-items-center"
-              @click="handleClick(index)"
             >
-              <h3 class="question-text text-start">{{ qa.question }}</h3>
+              <h3 class="question-text text-start" @click="handleClick(index)">
+                {{ qa.question }}
+              </h3>
               <img
                 src="../assets/addicon.png"
                 alt="Add"
                 title="Add"
-                :class="(clicked == index) ? closeImageClass : ''"
+                :class="answerShow[index] ? closeImageClass : ''"
                 @click="handleClose(index)"
               />
             </div>
-            <h5 v-if="index == clicked" :class="answerClass">{{ qa.answer }}</h5>
+            <h5 v-if="answerShow[index]" :class="answerClass">
+              {{ qa.answer }}
+            </h5>
           </div>
         </div>
       </div>
@@ -43,20 +50,41 @@ export default {
   data() {
     return {
       questionAndAnswer: questionAnswer,
-      clicked: -1,
-      borderClass: "d-flex flex-column py-4 gap-4 qa-border",
-      answerClass: "answer-text show text-start",
-      closeImageClass: "rotate"
+      answerShow: [false, false, false, false, false],
+      borderClass: 'd-flex flex-column py-4 gap-4 qa-border',
+      answerClass: 'answer-text show text-start',
+      closeImageClass: 'rotate',
     }
   },
   methods: {
     async handleClick(index) {
-      this.clicked = index
+      if (this.answerShow[index] == false) {
+        for (let i = 0; i < 5; i++) {
+          this.answerShow[i] = false
+        }
+        this.answerShow[index] = true
+        this.answerClass = 'answer-text show text-start'
+        this.closeImageClass = 'rotate'
+      }
     },
     async handleClose(index) {
-      this.answerClass = (this.clicked == index) ? "collapse" : "answer-text show text-start"
-      this.closeImageClass = (this.clicked == index) ? "rotate-reverse" : "rotate"
-    }
+      this.answerClass = this.answerShow[index]
+        ? 'collapse'
+        : 'answer-text show text-start'
+      this.closeImageClass = this.answerShow[index]
+        ? 'rotate-reverse'
+        : 'rotate'
+      if (this.answerShow[index] == false) {
+        for (let i = 0; i < 5; i++) {
+          this.answerShow[i] = false
+        }
+        this.answerShow[index] = !this.answerShow[index]
+      } else {
+        for (let i = 0; i < 5; i++) {
+          this.answerShow[i] = false
+        }
+      }
+    },
   },
 }
 </script>

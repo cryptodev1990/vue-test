@@ -88,6 +88,10 @@ export default {
   animation-timing-function: ease-in-out;
 }
 
+.card-animation-1:hover {
+  animation-play-state: paused;
+}
+
 .card-animation-2 {
   animation-name: anim-demo-2;
   animation-duration: 15s;
@@ -95,11 +99,19 @@ export default {
   animation-timing-function: ease-in-out;
 }
 
+.card-animation-2:hover {
+  animation-play-state: paused;
+}
+
 .card-animation-3 {
   animation-name: anim-demo-3;
   animation-duration: 8s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+}
+
+.card-animation-3:hover {
+  animation-play-state: paused;
 }
 
 .testimonials-background {

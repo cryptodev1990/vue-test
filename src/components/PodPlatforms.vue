@@ -70,10 +70,10 @@ export default {
 
 .pod-platform {
   background-image: url('../assets/PodBackground.png');
-  background-repeat: no-repeat;
-  height: 1144px;
+  background-repeat: repeat, no-repeat;
   width: 100%;
   padding-top: 100px;
+  padding-bottom: 100px;
   margin-top: 150px;
 }
 

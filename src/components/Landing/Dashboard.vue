@@ -34,7 +34,7 @@ export default {
 
 <style>
 .dashboard {
-  margin-top: 80px;
+  margin-top: 100px;
   width: 80%;
   margin-left: 5%;
 }

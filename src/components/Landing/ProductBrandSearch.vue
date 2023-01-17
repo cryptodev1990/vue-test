@@ -145,7 +145,7 @@ export default {
 }
 
 .product-brand-search {
-  margin-top: 155px;
+  margin-top: 140px;
   margin-left: 6%;
   z-index: 1;
 }

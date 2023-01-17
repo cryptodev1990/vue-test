@@ -65,7 +65,7 @@ export default {
 
 <style>
 .merch-titans {
-  margin-top: 40px;
+  margin-top: 70px;
   width: 80%;
   margin-left: 10%;
 }

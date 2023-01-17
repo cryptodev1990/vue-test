@@ -57,6 +57,7 @@ export default {
 }
 
 .nav-bar1{
+	position: sticky;
 	top: 0%;
 	left: 0%;
 	width: 100%;

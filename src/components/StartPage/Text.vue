@@ -39,6 +39,7 @@ export default {
 
 .text-component {
   padding-left: 20%;
+  z-index: 2;
 }
 
 .text-font {

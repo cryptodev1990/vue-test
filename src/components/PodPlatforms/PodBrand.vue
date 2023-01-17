@@ -18,11 +18,6 @@ export default {
     brandTitle: String,
     brandExplaination: String,
   },
-  // data() {
-  //   return {
-  //     backgroundImage: this.backgroundUrl
-  //   }
-  // },
   computed: {
     valueImage() {
       return {

@@ -46,14 +46,16 @@
             <th class="col-7 tag-right-border">Tag</th>
             <th class="col-5">Occurrences</th>
           </tr>
-          <tr
-            v-for="item in tagitems"
-            :key="item.id"
-            class="row table-element-border tag-name pb-1 mb-2"
-          >
-            <th class="col-7 tag-right-border">{{ item.tag }}</th>
-            <th class="col-5">{{ item.occurrences }} times</th>
-          </tr>
+          <div class="table-overflow">
+            <tr
+              v-for="item in tagitems"
+              :key="item.id"
+              class="row table-element-border tag-name pb-1 mb-2"
+            >
+              <th class="col-7 tag-right-border">{{ item.tag }}</th>
+              <th class="col-5">{{ item.occurrences }} times</th>
+            </tr>
+          </div>
         </table>
       </div>
       <img
@@ -113,15 +115,19 @@ export default {
 
 .cold-tag-table {
   position: absolute;
-  top: 4900px;
-  width: 189px;
-  height: 400px;
+  top: 5050px;
+  width: 200px;
   background: #ffffff;
   left: 70%;
   z-index: 3;
+  border-radius: 10px;
+}
+
+.table-overflow {
+  width: 106%;
+  height: 350px;
   overflow: scroll;
   float: left;
-  border-radius: 10px;
 }
 
 ::-webkit-scrollbar {
@@ -130,18 +136,18 @@ export default {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #ffffff; 
+  background: #ffffff;
   border-radius: 10px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ffffff; 
+  background: #ffffff;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #ffffff; 
+  background: #ffffff;
 }
 
 .table-element-border {
@@ -149,13 +155,13 @@ export default {
 }
 
 .keyword-research {
-  margin-top: 155px;
+  margin-top: 175px;
   margin-left: 6%;
 }
 
 .cold-tag {
-  width: 147.23px;
-  height: 22.97px;
+  width: 100%;
+  height: 24px;
   padding: 5.22099px 8.35359px;
   gap: 5.22px;
   background: rgba(58, 108, 255, 0.1);

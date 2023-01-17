@@ -23,12 +23,12 @@
           service=""
           :content="allAccessContent"
         />
-        <PriceLabel
+        <!-- <PriceLabel
           title="Lifetime Pass"
           price="1999"
           service="one time payment"
           :content="lifeTimeContent"
-        />
+        /> -->
       </div>
     </div>
   </div>
