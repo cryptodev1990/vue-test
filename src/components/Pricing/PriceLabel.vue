@@ -5,9 +5,9 @@
     <div class="d-flex gap-1 align-items-center justify-content-center">
       <h2 class="dollar">$</h2>
       <h1 class="price-number">{{ price }}</h1>
-      <h4 class="price-float">99</h4>
+      <h4 class="price-float">{{ float }}</h4>
     </div>
-    <h4 :class="serviceClass">{{ service }}</h4>
+    <h4 class="mb-3 service-text text-center">{{ service }}</h4>
     <h3 class="title-text pb-4 text-center">{{ title }}</h3>
     <div class="d-flex flex-column">
       <div v-for="(item, index) in content" :key="index">
@@ -33,13 +33,13 @@ export default {
     price: String,
     title: String,
     content: Array,
+    float: Number
   },
-  data() {
-    return {
-      serviceClass:
-        this.service == '' ? 'mb-5' : 'mb-3 service-text text-center',
-    }
-  },
+  // data() {
+  //   return {
+  //     serviceClass: this.service == '' ? 'mb-5' : 'mb-3 service-text text-center',
+  //   }
+  // },
 }
 </script>
 

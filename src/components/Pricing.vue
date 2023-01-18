@@ -13,14 +13,16 @@
       <div class="d-flex gap-4 justify-content-center">
         <PriceLabel
           title="Single Platform Access"
-          price="24"
-          service=""
+          :price="singlePlatformAccessPrice"
+          :float="singlePlatformAccessFloat"
+          :service="singlePlatformAccessService"
           :content="singleContent"
         />
         <PriceLabel
           title="All Access Pass"
-          price="69"
-          service=""
+          :price="allAccessPassPrice"
+          :float="allAccessPassFloat"
+          :service="allAccessPassService"
           :content="allAccessContent"
         />
         <!-- <PriceLabel
@@ -55,16 +57,34 @@ export default {
       lifeTimeContent: lifeTimePass,
       classMonthly: 'clicked-text rounded-pill',
       classAnnual: 'unclicked-text',
+      singlePlatformAccessPrice: "24",
+      singlePlatformAccessFloat: "99",
+      allAccessPassPrice: "69",
+      allAccessPassFloat: "99",
+      singlePlatformAccessService: "",
+      allAccessPassService: ""
     }
   },
   methods: {
     async handleMonthlyClick() {
       this.classMonthly = 'clicked-text rounded-pill'
       this.classAnnual = 'unclicked-text'
+      this.singlePlatformAccessPrice = "24"
+      this.singlePlatformAccessFloat = 99
+      this.allAccessPassPrice = "69"
+      this.allAccessPassFloat = 99
+      this.singlePlatformAccessService = ""
+      this.allAccessPassService = ""
     },
     async handleAnnualClick() {
       this.classMonthly = 'unclicked-text'
       this.classAnnual = 'clicked-text rounded-pill'
+      this.singlePlatformAccessPrice = "18"
+      this.singlePlatformAccessFloat = 74
+      this.allAccessPassPrice = "52"
+      this.allAccessPassFloat = 49
+      this.singlePlatformAccessService = "($224.88 billed annually)"
+      this.allAccessPassService = "($629.88 billed annually)"
     },
   },
 }

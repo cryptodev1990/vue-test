@@ -23,48 +23,56 @@
         on Amazon per keyword, and more.
       </p>
     </div>
-    <div class="d-flex flex-column px-5 justify-content-center">
-      <div class="d-flex flex-column p-3 gap-2 cold-tag-table rounded-2">
-        <div class="d-flex gap-1">
-          <div class="d-flex cold-tag justify-content-center">
-            <img src="../../assets/sun.svg" alt="Colg-Tag" title="Cold-Tag" />
-            <h6 class="cold-tag-text">Cold Tag</h6>
+    <section>
+      <div class="container reveal fade-right">
+        <div class="d-flex flex-column px-5 justify-content-center">
+          <div class="d-flex flex-column p-3 gap-2 cold-tag-table rounded-2">
+            <div class="d-flex gap-1">
+              <div class="d-flex cold-tag justify-content-center">
+                <img
+                  src="../../assets/sun.svg"
+                  alt="Colg-Tag"
+                  title="Cold-Tag"
+                />
+                <h6 class="cold-tag-text">Cold Tag</h6>
+              </div>
+              <div
+                class="d-flex table-order align-items-center justify-centent-center"
+              >
+                <img
+                  src="../../assets/arrow.svg"
+                  alt="Up-Down"
+                  title="Up-Down"
+                  class="px-1"
+                />
+              </div>
+            </div>
+            <table>
+              <tr class="row pb-1 table-header-font table-element-border mb-2">
+                <th class="col-7 tag-right-border">Tag</th>
+                <th class="col-5">Occurrences</th>
+              </tr>
+              <div class="table-overflow">
+                <tr
+                  v-for="item in tagitems"
+                  :key="item.id"
+                  class="row table-element-border tag-name pb-1 mb-2"
+                >
+                  <th class="col-7 tag-right-border">{{ item.tag }}</th>
+                  <th class="col-5">{{ item.occurrences }} times</th>
+                </tr>
+              </div>
+            </table>
           </div>
-          <div
-            class="d-flex table-order align-items-center justify-centent-center"
-          >
-            <img
-              src="../../assets/arrow.svg"
-              alt="Up-Down"
-              title="Up-Down"
-              class="px-1"
-            />
-          </div>
+          <img
+            src="../../assets/Dashboard-small.png"
+            alt="Dashboard"
+            title="Dashboard"
+            class="dashboard-small"
+          />
         </div>
-        <table>
-          <tr class="row pb-1 table-header-font table-element-border mb-2">
-            <th class="col-7 tag-right-border">Tag</th>
-            <th class="col-5">Occurrences</th>
-          </tr>
-          <div class="table-overflow">
-            <tr
-              v-for="item in tagitems"
-              :key="item.id"
-              class="row table-element-border tag-name pb-1 mb-2"
-            >
-              <th class="col-7 tag-right-border">{{ item.tag }}</th>
-              <th class="col-5">{{ item.occurrences }} times</th>
-            </tr>
-          </div>
-        </table>
       </div>
-      <img
-        src="../../assets/Dashboard-small.png"
-        alt="Dashboard"
-        title="Dashboard"
-        class="dashboard-small"
-      />
-    </div>
+    </section>
   </div>
 </template>
 
@@ -82,5 +90,5 @@ export default {
 </script>
 
 <style>
-@import url("./Landing.scss");
+@import url('./Landing.scss');
 </style>

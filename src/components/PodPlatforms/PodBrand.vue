@@ -1,7 +1,8 @@
 <template>
   <div
-    class="col d-flex flex-column align-items-start text-start py-4 px-3 gap-2 brand-background"
+    class="col d-flex flex-column align-items-start text-start py-4 px-3 gap-2 brand-background zoom"
     :style="valueImage"
+    role="button"
   >
     <img :src="brandImageUrl" alt="BrandImage" title="Brand" />
     <h3 class="brand-title">{{ brandTitle }}</h3>

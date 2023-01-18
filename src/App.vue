@@ -9,7 +9,6 @@
     <Footer></Footer>>
   </div>
 </template>
-
 <script>
 import StartPage from "./components/StartPage.vue";
 import Landing from './components/Landing.vue';

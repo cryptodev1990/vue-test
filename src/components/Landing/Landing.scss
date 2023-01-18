@@ -54,8 +54,8 @@
 .chart {
   margin-top: -600px;
   margin-left: 55%;
-  width: 38%;
   z-index: 2;
+  backdrop-filter: blur(42.3px);
 }
 
 .chart-background {
@@ -132,7 +132,6 @@
 
 .cold-tag-table {
   position: absolute;
-  top: 5050px;
   width: 200px;
   background: #ffffff;
   left: 70%;
@@ -224,7 +223,7 @@
 }
 
 .merch-titans {
-  margin-top: 70px;
+  margin-top: 90px;
   width: 80%;
   margin-left: 10%;
 }
@@ -274,6 +273,7 @@
   border: 0.972151px solid rgba(188, 197, 234, 0.25);
   box-shadow: 137.193px 113.674px 60.7568px -13.6101px rgba(47, 57, 99, 0.2);
   border-radius: 15.5544px;
+  backdrop-filter: blur(46.0576px);
 }
 
 .h6-content {
@@ -346,6 +346,7 @@
   border: 0.972151px solid rgba(188, 197, 234, 0.25);
   box-shadow: 137.193px 113.674px 60.7568px -13.6101px rgba(47, 57, 99, 0.2);
   border-radius: 15.5544px;
+  backdrop-filter: blur(46.0576px);
 }
 
 .statistics-text-small {
@@ -356,7 +357,7 @@
 }
 
 .product-brand-search {
-  margin-top: 140px;
+  margin-top: 180px;
   margin-left: 6%;
   z-index: 1;
 }
@@ -421,4 +422,70 @@ p {
   display: flex;
   align-items: center;
   text-align: center;
+}
+
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  section h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  section .text-container {
+    flex-direction: column;
+  }
+}
+
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }

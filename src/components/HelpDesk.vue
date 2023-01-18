@@ -1,14 +1,14 @@
 <template>
   <div class="d-flex helpdesk-background justify-content-center">
     <div class="d-flex justify-content-between gap-5">
-      <div class="d-flex flex-column gap-4 text-start">
+      <div class="d-flex flex-column gap-4 text-start px-5">
         <h4 class="faq-title">FREQUENTLY ASKED QUESTIONS</h4>
         <h1 class="question-emphersize">Want to learn more? View our</h1>
         <div class="p-3 rounded-2 helpdesk-button">
           <h2 class="helpdesk-button-text rounded-3">Help Desk</h2>
         </div>
       </div>
-      <div class="d-flex flex-column w-50">
+      <div class="d-flex flex-column w-75">
         <div v-for="(qa, index) in questionAndAnswer" :key="index">
           <div
             :class="

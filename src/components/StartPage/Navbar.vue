@@ -21,10 +21,7 @@
   
 <script>
 export default {
-	name: 'NavBar',
-	props:{
-		msg: String
-	}
+	name: 'NavBar'
 }
 
 </script>
