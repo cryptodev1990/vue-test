@@ -22,15 +22,5 @@ export default {
 </script>
 
 <style>
-.startpage {
-  background-repeat: no-repeat;
-  margin-bottom: 200px;
-  width: 100%;
-}
-
-.startbackground {
-  width: 100%;
-  position: absolute;
-  z-index: 0;
-}
+@import url("../app.scss");
 </style>

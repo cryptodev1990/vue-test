@@ -29,56 +29,5 @@ export default {
 </script>
 
 <style>
-.start-text-gray {
-  font-style: italic;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 120%;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.text-component {
-  padding-left: 20%;
-  z-index: 2;
-}
-
-.text-font {
-  font-weight: 800;
-  font-size: 62px;
-  line-height: 140%;
-  letter-spacing: 0.04em;
-}
-
-.h5-font {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 130%;
-  letter-spacing: 0.02em;
-  backdrop-filter: blur(10px);
-}
-
-.text-width {
-  width: 70%;
-}
-
-.text-font-white {
-  -webkit-text-fill-color: white;
-}
-
-.try-free-button {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 1000;
-  font-size: 50px;
-  line-height: 18px;
-  letter-spacing: 0.05em;
-}
-
-.text-font-gradient {
-  background: linear-gradient(91.48deg, #f4b913 3.01%, #8df53a 96.12%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
+@import url("./Startpage.scss");
 </style>

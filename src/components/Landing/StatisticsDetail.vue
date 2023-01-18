@@ -32,49 +32,5 @@ export default {
 </script>
 
 <style>
-.detail-title {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15.5544px;
-  line-height: 120%;
-  text-align: center;
-  color: #989fbf;
-  white-space: nowrap;
-}
-
-.detail-title-small {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 7.93634px;
-  line-height: 120%;
-  text-align: center;
-  color: #989fbf;
-  white-space: nowrap;
-}
-
-.detail {
-  background: rgba(255, 255, 255, 0.5);
-  border: 0.972151px solid rgba(188, 197, 234, 0.25);
-  border-radius: 15.5544px;
-}
-
-.detail-value {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 25.2759px;
-  line-height: 38px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-
-.detail-value-small {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12.8966px;
-  line-height: 19px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
+@import url("./Landing.scss");
 </style>

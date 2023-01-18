@@ -21,34 +21,5 @@ export default {
 </script>
 
 <style>
-body {
-  overflow-x: hidden;
-}
-
-.ellipse {
-  width: 150%;
-  height: 600px;
-  margin-left: -25%;
-  margin-top: 40px;
-  background: #ffffff;
-  z-index: 1;
-  border-radius: 100%;
-}
-
-.movie {
-  z-index: 2;
-  margin-top: -630px;
-  margin-right: 2%;
-  background-repeat: no-repeat, repeat;
-}
-
-.movie-image {
-  width: max-content;
-}
-
-.play-image {
-  z-index: 3;
-  margin-top: -630px;
-  width: max-content;
-}
+@import url("./Startpage.scss");
 </style>

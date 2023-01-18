@@ -64,57 +64,5 @@ export default {
 </script>
 
 <style>
-.merch-titans {
-  margin-top: 70px;
-  width: 80%;
-  margin-left: 10%;
-}
-
-.statistics-text {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 25.2759px;
-  line-height: 38px;
-  color: #111215;
-}
-
-.cell {
-  padding: 15.5544px;
-  gap: 5.83px;
-  background: rgba(255, 255, 255, 0.5);
-  border: 0.972151px solid rgba(188, 197, 234, 0.25);
-  border-radius: 15.5544px;
-}
-
-.statistics-category {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15.5544px;
-  line-height: 120%;
-  text-align: center;
-  color: #989fbf;
-}
-
-.statistics-t-shirt {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 13.6101px;
-  line-height: 120%;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #111215;
-}
-
-.statistics {
-  margin-top: -500px;
-  margin-left: 3%;
-  width: 60%;
-  z-index: 2;
-  background: rgba(255, 255, 255, 0.9);
-  border: 0.972151px solid rgba(188, 197, 234, 0.25);
-  box-shadow: 137.193px 113.674px 60.7568px -13.6101px rgba(47, 57, 99, 0.2);
-  backdrop-filter: blur(46.0576px);
-  border-radius: 15.5544px;
-}
+@import url("./Landing.scss");
 </style>

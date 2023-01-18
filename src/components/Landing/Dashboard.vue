@@ -33,24 +33,5 @@ export default {
 </script>
 
 <style>
-.dashboard {
-  margin-top: 100px;
-  width: 80%;
-  margin-left: 5%;
-}
-
-.chart {
-  margin-top: -600px;
-  margin-left: 55%;
-  width: 38%;
-  z-index: 2;
-}
-
-.chart-background {
-  background: rgba(255, 255, 255, 0.9);
-  border: 0.892838px solid rgba(188, 197, 234, 0.25);
-  box-shadow: 66.6px 104.4px 55.8px -12.4997px rgba(47, 57, 99, 0.15);
-  backdrop-filter: blur(42.3px);
-  border-radius: 14.2854px;
-}
+@import url("./Landing.scss");
 </style>

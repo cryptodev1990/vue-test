@@ -1,0 +1,424 @@
+.automation-works-font {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #c3bed7;
+}
+
+.automation-works {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+}
+
+.automation {
+  margin-top: 340px;
+  margin-left: 5%;
+  width: 90%;
+}
+
+.merchtitans-gradient {
+  background: linear-gradient(91.65deg, #f4b913 3.02%, #8df53a 69.31%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.brand-border {
+  border-bottom: 0.742455px solid #989fbf2a;
+}
+
+.brand-name {
+  font-weight: 400;
+  font-size: 11.8793px;
+  line-height: 120%;
+  color: #989fbf;
+}
+
+.brand-value {
+  font-weight: 600;
+  font-size: 11.8793px;
+  line-height: 21px;
+  color: #191d21;
+}
+
+.dashboard {
+  margin-top: 100px;
+  width: 80%;
+  margin-left: 5%;
+}
+
+.chart {
+  margin-top: -600px;
+  margin-left: 55%;
+  width: 38%;
+  z-index: 2;
+}
+
+.chart-background {
+  background: rgba(255, 255, 255, 0.9);
+  border: 0.892838px solid rgba(188, 197, 234, 0.25);
+  box-shadow: 66.6px 104.4px 55.8px -12.4997px rgba(47, 57, 99, 0.15);
+  border-radius: 14.2854px;
+}
+
+.demand-business {
+  background-image: url("../../assets/DemandBusiness.png");
+  background-repeat: no-repeat;
+  margin-top: 400px;
+  height: 485px;
+  margin-left: 6%;
+}
+
+.revolutionize {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+}
+
+.demand-business-gradient {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  background: linear-gradient(91.65deg, #f4b913 3.02%, #8df53a 69.31%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.demand-business-today {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 120%;
+}
+
+.keyword-research-text {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  background: linear-gradient(91.65deg, #f4b913 3.02%, #8df53a 69.31%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.tag-name {
+  font-weight: 400;
+  font-size: 9.39779px;
+  line-height: 14px;
+  letter-spacing: -0.03em;
+  color: #111215;
+}
+
+.table-header-font {
+  font-weight: 700;
+  font-size: 8.35359px;
+  line-height: 13px;
+  color: #989fbf;
+}
+
+.tag-right-border {
+  border-right: 0.522099px solid #bec3d4;
+}
+
+.cold-tag-table {
+  position: absolute;
+  top: 5050px;
+  width: 200px;
+  background: #ffffff;
+  left: 70%;
+  z-index: 3;
+  border-radius: 10px;
+}
+
+.table-overflow {
+  width: 106%;
+  height: 350px;
+  overflow: scroll;
+  float: left;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+
+.table-element-border {
+  border-bottom: 0.522099px solid #bec3d4;
+}
+
+.keyword-research {
+  margin-top: 175px;
+  margin-left: 6%;
+}
+
+.cold-tag {
+  width: 100%;
+  height: 24px;
+  padding: 5.22099px 8.35359px;
+  gap: 5.22px;
+  background: rgba(58, 108, 255, 0.1);
+  border-radius: 4.1768px 1.0442px 1.0442px 4.1768px;
+}
+
+.cold-tag-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 7.30939px;
+  line-height: 10px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #3a6cff;
+}
+
+.table-order {
+  background: rgba(58, 108, 255, 0.1);
+  border-radius: 1.14862px 4.59448px 4.59448px 1.14862px;
+}
+
+.autocomplete-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 120%;
+}
+
+.plain-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #c3bed7;
+}
+
+.suggestion-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+}
+
+.merch-titans {
+  margin-top: 70px;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.statistics-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25.2759px;
+  line-height: 38px;
+  color: #111215;
+}
+
+.cell {
+  padding: 15.5544px;
+  gap: 5.83px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 0.972151px solid rgba(188, 197, 234, 0.25);
+  border-radius: 15.5544px;
+}
+
+.statistics-category {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.5544px;
+  line-height: 120%;
+  text-align: center;
+  color: #989fbf;
+}
+
+.statistics-t-shirt {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13.6101px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #111215;
+}
+
+.statistics {
+  margin-top: -500px;
+  margin-left: 3%;
+  width: 60%;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.9);
+  border: 0.972151px solid rgba(188, 197, 234, 0.25);
+  box-shadow: 137.193px 113.674px 60.7568px -13.6101px rgba(47, 57, 99, 0.2);
+  border-radius: 15.5544px;
+}
+
+.h6-content {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #c3bed7;
+}
+
+.h4-content {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 140%;
+}
+
+.print-on-demand {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 120%;
+}
+
+.text-gradient {
+  background: linear-gradient(91.65deg, #f4b913 3.02%, #8df53a 69.31%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.statistics-category-small {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 7.93634px;
+  line-height: 120%;
+  text-align: center;
+  color: #989fbf;
+}
+
+.statistics-t-shirt-small {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 6.9443px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #111215;
+}
+
+.product-brand-gradient {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  background: linear-gradient(91.65deg, #f4b913 3.02%, #8df53a 69.31%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.statistics-small {
+  margin-top: -270px;
+  margin-left: 28%;
+  width: 85%;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.9);
+  border: 0.972151px solid rgba(188, 197, 234, 0.25);
+  box-shadow: 137.193px 113.674px 60.7568px -13.6101px rgba(47, 57, 99, 0.2);
+  border-radius: 15.5544px;
+}
+
+.statistics-text-small {
+  font-weight: 500;
+  font-size: 12.8966px;
+  line-height: 19px;
+  color: #111215;
+}
+
+.product-brand-search {
+  margin-top: 140px;
+  margin-left: 6%;
+  z-index: 1;
+}
+
+.search {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+}
+
+p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #c3bed7;
+}
+
+.detail-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.5544px;
+  line-height: 120%;
+  text-align: center;
+  color: #989fbf;
+  white-space: nowrap;
+}
+
+.detail-title-small {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 7.93634px;
+  line-height: 120%;
+  text-align: center;
+  color: #989fbf;
+  white-space: nowrap;
+}
+
+.detail {
+  background: rgba(255, 255, 255, 0.5);
+  border: 0.972151px solid rgba(188, 197, 234, 0.25);
+  border-radius: 15.5544px;
+}
+
+.detail-value {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25.2759px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.detail-value-small {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12.8966px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}

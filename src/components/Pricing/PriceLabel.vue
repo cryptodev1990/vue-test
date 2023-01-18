@@ -36,7 +36,8 @@ export default {
   },
   data() {
     return {
-      serviceClass: this.service == '' ? 'mb-5' : 'mb-3 service-text text-center',
+      serviceClass:
+        this.service == '' ? 'mb-5' : 'mb-3 service-text text-center',
     }
   },
 }
@@ -104,8 +105,7 @@ export default {
 
 .zoom {
   transition: transform 0.2s;
-  filter: brightness(95%)
-  
+  filter: brightness(95%);
 }
 
 .zoom:hover {

@@ -41,34 +41,5 @@ export default {
 </script>
 
 <style>
-
-.h6-content {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 140%;
-  color: #c3bed7;
-}
-
-.h4-content {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 140%;
-}
-
-.print-on-demand {
-  font-style: normal;
-  font-weight: 800;
-  font-size: 38px;
-  line-height: 120%;
-}
-
-.text-gradient {
-  background: linear-gradient(91.65deg, #f4b913 3.02%, #8df53a 69.31%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
+@import url("./Landing.scss");
 </style>

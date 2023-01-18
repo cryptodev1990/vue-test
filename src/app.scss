@@ -1,0 +1,331 @@
+.footer-middle {
+  border-bottom: #6d7280 solid 0.05rem;
+}
+.footer {
+  background: #13111d;
+  width: 100%;
+  padding-bottom: 100px;
+}
+.first-group {
+  border-right: #6d7280 solid 0.05rem;
+}
+.mr-2 {
+  margin-right: 10px;
+}
+
+.pl-5 {
+  padding-left: 50px !important;
+}
+.btn-login {
+  border: none !important;
+  background: rgba(244, 185, 19, 0.1) !important;
+}
+.separator {
+  color: #7e75a5;
+}
+.copyright {
+  color: #7e75a5;
+}
+
+.question-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  color: #111827;
+}
+
+.rotate {
+  transition: transform 0.5s;
+  transform: rotate(45deg);
+}
+
+.rotate-reverse {
+  transition: transform 0.5s;
+  transform: rotate(0deg);
+}
+
+.show {
+  -webkit-animation: display 0.5s linear forwards;
+  animation: display 0.5s linear forwards;
+}
+
+.qa-border {
+  border-bottom: 1px solid rgba(126, 117, 165, 0.25);
+  margin-bottom: 20px;
+}
+
+.answer-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #6d7280;
+}
+
+@-webkit-keyframes display {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes display {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.helpdesk-background {
+  width: 70%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.faq-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  color: #6d7280;
+}
+
+.question-emphersize {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 120%;
+  color: #111827;
+}
+
+.helpdesk-button {
+  background: #111827;
+  width: max-content;
+}
+
+.helpdesk-button-text {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  background: linear-gradient(91.48deg, #f4b913 3.01%, #8df53a 96.12%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.landing {
+  background-image: url('../assets/landingBackground.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-left: 100px;
+  padding-top: 110px;
+  padding-bottom: 105px;
+  padding-right: 80px;
+  border-radius: 40px;
+}
+
+.container-width {
+  display: flex;
+  width: 60%;
+}
+
+.pod-platform {
+  background-image: url('../assets/PodBackground.png');
+  background-repeat: repeat, no-repeat;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-top: 150px;
+}
+
+.integration-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #6d7280;
+}
+
+.pod-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 140%;
+  text-align: center;
+}
+
+.pricing-background {
+  background-image: url('../assets/PricingBackground.png');
+  background-repeat: no-repeat;
+  height: 1348px;
+  padding-top: 140px;
+  width: 100%;
+}
+
+.pricing-width {
+  width: 60%;
+}
+
+.clicked-text {
+  display: flex;
+  justify-content: center;
+  color: #111827;
+  align-items: center;
+  padding: 10px 15px;
+  background: #ffb507;
+  box-shadow: 0px 7px 46px rgba(255, 181, 7, 0.2);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.unclicked-text {
+  justify-content: center;
+  align-items: center;
+  color: #111827;
+  padding: 10px 15px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.period-select {
+  background: rgba(255, 181, 7, 0.05);
+  border: 1px solid rgba(255, 181, 7, 0.2);
+}
+
+.pricing-h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 140%;
+  color: #111827;
+}
+
+.startpage {
+  background-repeat: no-repeat;
+  margin-bottom: 200px;
+  width: 100%;
+}
+
+.startbackground {
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+}
+
+@keyframes anim-demo-1 {
+  0%   {margin-top: 0px;}
+  50%  {margin-top:  -500px}
+  100% {margin-top: 0px}
+}
+
+@keyframes anim-demo-2 {
+  0%   {margin-top: 0px;}
+  50%  {margin-top:  -1000px}
+  100% {margin-top: 0px}
+}
+
+@keyframes anim-demo-3 {
+  0%   {margin-top: 0px;}
+  50%  {margin-top:  -200px}
+  100% {margin-top: 0px}
+}
+
+.card-animation-1 {
+  animation-name: anim-demo-1;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.card-animation-1:hover {
+  animation-play-state: paused;
+}
+
+.card-animation-2 {
+  animation-name: anim-demo-2;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.card-animation-2:hover {
+  animation-play-state: paused;
+}
+
+.card-animation-3 {
+  animation-name: anim-demo-3;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.card-animation-3:hover {
+  animation-play-state: paused;
+}
+
+.testimonials-background {
+  background-image: url('../assets/TestimonialsBackground.png');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 1313px;
+  overflow: hidden;
+}
+
+.testimonials-text {
+  font-weight: 800;
+  font-size: 187.859px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  background: linear-gradient(91.48deg, #f4b913 3.01%, #8df53a 96.12%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  writing-mode: vertical-rl;
+  transform: rotate(-180deg);
+}
+
+.rectangle-gradient-top {
+  position: absolute;
+  background: linear-gradient(180deg, rgba(4, 0, 24, 0) 0%, #040018 100%);
+  transform: rotate(180deg);
+  width: 100%;
+  height: 214px;
+  z-index: 3;
+}
+
+.rectangle-gradient-bottom {
+  position: absolute;
+  margin-top: 1101px;
+  background: linear-gradient(180deg, rgba(4, 0, 24, 0) 0%, #040018 100%);
+  width: 100%;
+  height: 214px;
+  z-index: 3;
+}
+
+.testimonials-main-content {
+  padding-left: 20%;
+  padding-right: 20%;
+  z-index: 1;
+}

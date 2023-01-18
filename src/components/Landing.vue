@@ -7,6 +7,7 @@
     <DemandBusiness />
     <ProductBrandSearch />
     <KeywordResearch />
+    <!-- <Test /> -->
   </div>
 </template>
 
@@ -18,6 +19,8 @@ import DashBoard from './Landing/Dashboard.vue'
 import DemandBusiness from './Landing/DemandBusiness.vue'
 import ProductBrandSearch from './Landing/ProductBrandSearch.vue'
 import KeywordResearch from './Landing/KeywordResearch.vue'
+// import Test from './Landing/Test.vue'
+
 export default {
   name: 'LandingComponent',
   components: {
@@ -28,23 +31,11 @@ export default {
     DemandBusiness,
     ProductBrandSearch,
     KeywordResearch,
+    // Test
   },
 }
 </script>
 
 <style>
-.landing {
-  background-image: url('../assets/landingBackground.png');
-  background-size: cover;
-  /* height: 3800px; */
-  background-repeat: no-repeat;
-  margin-top: 50px;
-  margin-left: 15%;
-  margin-right: 15%;
-  padding-left: 100px;
-  padding-top: 110px;
-  padding-bottom: 105px;
-  padding-right: 80px;
-  border-radius: 40px;
-}
+@import url("../app.scss");
 </style>

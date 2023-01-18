@@ -30,11 +30,5 @@ export default {
 </script>
 
 <style>
-.automation-works-font {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 130%;
-  color: #c3bed7;
-}
+@import url("./Landing.scss");
 </style>

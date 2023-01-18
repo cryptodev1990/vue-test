@@ -30,39 +30,5 @@ export default {
 </script>
   
 <style>
-.nav-link {
-  color: white !important;
-}
-
-.b-navbar {
-	width: 65%;
-	left: 20%;
-	height: 150px;
-}
-
-.gap {
-	gap: 40px;
-}
-
-.border-smooth {
-	border-bottom: 1px solid gray;
-}
-
-.navbar-font {
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 19px;
-	letter-spacing: 0.02em;
-	text-align: left;
-}
-
-.nav-bar1{
-	position: sticky;
-	top: 0%;
-	left: 0%;
-	width: 100%;
-	background: rgba(0, 0, 0, 0.25);
-	backdrop-filter: blur(25px);
-	z-index: 10;
-}
+@import url("./Startpage.scss");
 </style>

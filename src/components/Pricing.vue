@@ -71,51 +71,5 @@ export default {
 </script>
 
 <style>
-.pricing-background {
-  background-image: url('../assets/PricingBackground.png');
-  background-repeat: no-repeat;
-  height: 1348px;
-  padding-top: 140px;
-  width: 100%;
-}
-
-.pricing-width {
-  width: 60%;
-}
-
-.clicked-text {
-  display: flex;
-  justify-content: center;
-  color: #111827;
-  align-items: center;
-  padding: 10px 15px;
-  background: #ffb507;
-  box-shadow: 0px 7px 46px rgba(255, 181, 7, 0.2);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.unclicked-text {
-  justify-content: center;
-  align-items: center;
-  color: #111827;
-  padding: 10px 15px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 100%;
-}
-
-.period-select {
-  background: rgba(255, 181, 7, 0.05);
-  border: 1px solid rgba(255, 181, 7, 0.2);
-}
-
-.pricing-h1 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 140%;
-  color: #111827;
-}
+@import url("../app.scss");
 </style>

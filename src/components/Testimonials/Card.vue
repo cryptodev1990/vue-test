@@ -1,6 +1,11 @@
 <template>
   <div class="testimonials-card">
-    <img class="card-img-top" :src="img_source" alt="Card image cap" title="Card Image" />
+    <img
+      class="card-img-top"
+      :src="img_source"
+      alt="Card image cap"
+      title="Card Image"
+    />
     <div class="d-flex flex-column card-body p-4 gap-4">
       <h5 class="card-title">{{ title }}</h5>
       <h7 class="card-author">{{ author }}</h7>

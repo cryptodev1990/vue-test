@@ -63,35 +63,5 @@ export default {
 </script>
 
 <style>
-.container-width {
-  display: flex;
-  width: 60%;
-}
-
-.pod-platform {
-  background-image: url('../assets/PodBackground.png');
-  background-repeat: repeat, no-repeat;
-  width: 100%;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  margin-top: 150px;
-}
-
-.integration-text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  text-align: center;
-  letter-spacing: 0.2px;
-  color: #6d7280;
-}
-
-.pod-title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 140%;
-  text-align: center;
-}
+@import url("../app.scss");
 </style>

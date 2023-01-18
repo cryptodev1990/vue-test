@@ -112,32 +112,5 @@ export default {
 </script>
 
 <style>
-.footer-middle {
-  border-bottom: #6d7280 solid 0.05rem;
-}
-.footer {
-  background: #13111d;
-  width: 100%;
-  padding-bottom: 100px;
-}
-.first-group {
-  border-right: #6d7280 solid 0.05rem;
-}
-.mr-2 {
-  margin-right: 10px;
-}
-
-.pl-5 {
-  padding-left: 50px !important;
-}
-.btn-login {
-  border: none !important;
-  background: rgba(244, 185, 19, 0.1) !important;
-}
-.separator {
-  color: #7e75a5;
-}
-.copyright {
-  color: #7e75a5;
-}
+@import url("../app.scss");
 </style>

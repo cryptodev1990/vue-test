@@ -33,26 +33,5 @@ export default {
 </script>
 
 <style>
-.automation-works {
-  font-style: normal;
-  font-weight: 800;
-  font-size: 38px;
-  line-height: 120%;
-  letter-spacing: 0.02em;
-}
-
-.automation {
-  margin-top: 340px;
-  margin-left: 5%;
-  width: 90%;
-}
-
-.merchtitans-gradient {
-  background: linear-gradient(91.65deg, #f4b913 3.02%, #8df53a 69.31%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-
-  backdrop-filter: blur(10px);
-}
+@import url("./Landing.scss");
 </style>

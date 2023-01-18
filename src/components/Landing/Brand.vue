@@ -23,21 +23,5 @@ export default {
 </script>
 
 <style>
-.brand-border {
-  border-bottom: 0.742455px solid #989fbf2a;
-}
-
-.brand-name {
-  font-weight: 400;
-  font-size: 11.8793px;
-  line-height: 120%;
-  color: #989fbf;
-}
-
-.brand-value {
-  font-weight: 600;
-  font-size: 11.8793px;
-  line-height: 21px;
-  color: #191d21;
-}
+@import url("./Landing.scss");
 </style>
