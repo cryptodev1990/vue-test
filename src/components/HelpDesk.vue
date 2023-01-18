@@ -19,16 +19,16 @@
           >
             <div
               role="button"
-              class="d-flex justify-content-between align-items-center"
+              class="row align-items-center"
             >
-              <h3 class="question-text text-start" @click="handleClick(index)">
+              <h3 class="col-11 question-text text-start" @click="handleClick(index)">
                 {{ qa.question }}
               </h3>
               <img
                 src="../assets/addicon.png"
                 alt="Add"
                 title="Add"
-                :class="answerShow[index] ? closeImageClass : ''"
+                :class="answerShow[index] ? closeImageClass : 'col-1'"
                 @click="handleClose(index)"
               />
             </div>
@@ -53,7 +53,7 @@ export default {
       answerShow: [false, false, false, false, false],
       borderClass: 'd-flex flex-column py-4 gap-4 qa-border',
       answerClass: 'answer-text show text-start',
-      closeImageClass: 'rotate',
+      closeImageClass: 'rotate col-1',
     }
   },
   methods: {
@@ -64,7 +64,7 @@ export default {
         }
         this.answerShow[index] = true
         this.answerClass = 'answer-text show text-start'
-        this.closeImageClass = 'rotate'
+        this.closeImageClass = 'rotate col-1'
       }
     },
     async handleClose(index) {
@@ -72,8 +72,8 @@ export default {
         ? 'collapse'
         : 'answer-text show text-start'
       this.closeImageClass = this.answerShow[index]
-        ? 'rotate-reverse'
-        : 'rotate'
+        ? 'rotate-reverse col-1'
+        : 'rotate col-1'
       if (this.answerShow[index] == false) {
         for (let i = 0; i < 5; i++) {
           this.answerShow[i] = false
